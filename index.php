@@ -41,12 +41,10 @@ $i= 0;
 while ($i <= 10) {
   echo "Number ".$i."<br  />";
   $i++;
-
+}
 
 
 LOOP (foreach)
-}
-*/
 $ages = array(
 "John" => 35,
 "Mary" => 27,
@@ -56,6 +54,10 @@ $ages = array(
 foreach ($ages as $name => $age) {
   echo $name." is ". $age. " years old<br  />";
 }
+
+
+*/
+
 
 
 ?>
