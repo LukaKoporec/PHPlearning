@@ -1,7 +1,9 @@
 <?php
-     $myVar1 = "Hello";
-     $myVar2 = "World";
+     //$myVar1 = "Hello";
+     //$myVar2 = "World";
 
+     //echo $myVar1."   ".$myVar2;
+$numbers = array(12,45,22,34,65);
 
-     echo $myVar1."   ".$myVar2;
+print_r($numbers);     
 ?>
