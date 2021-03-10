@@ -137,8 +137,6 @@ $User = new User('Brad', '1234');
 
 //$User->login();
 
-*/
-
 class Post{
   private $name;
 
@@ -162,6 +160,32 @@ $post = new Post;
 $post->name = 'Testing';
 echo $post->name;
 var_dump(Isset($post->name));
+
+*/
+
+class First{
+  public $id = 23;
+  protected $name = 'John Doe';
+
+  public function SaySomething($word){
+    echo $word;
+  }
+}
+
+class Second extends First{
+public function getName(){
+  echo $this->name;
+}
+
+}
+
+$second = new Second;
+
+echo $second->getName();
+
+//echo $second->saySomething('Hello world');
+
+
 
 
 
