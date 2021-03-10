@@ -1,5 +1,7 @@
 <?php
-class Bar{
-  
+class Bar extends foo{
+  public function sayHello(){
+    echo 'Hello from Bar';
+  }
 }
  ?>
