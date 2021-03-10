@@ -46,7 +46,6 @@ while ($i <= 10) {
 
 LOOP (foreach)
 }
-*/
 $ages = array(
 "John" => 35,
 "Mary" => 27,
@@ -56,6 +55,26 @@ $ages = array(
 foreach ($ages as $name => $age) {
   echo $name." is ". $age. " years old<br  />";
 }
+
+
+                                FUNCTIONS
+
+function greet(){
+echo 'Hello world!';
+}
+
+greet();
+
+function greet($greeting, $name='John'){
+  echo strtoupper($greeting.' '.$name);
+}
+
+greet('Whats up','Brad');
+
+
+*/
+
+
 
 
 ?>
