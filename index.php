@@ -208,8 +208,6 @@ else {
 
 
 echo User::$minPassLenght;
-*/
-
 abstract class Animal{
   public $name;
   public $color;
@@ -246,6 +244,10 @@ $animal->name = 'Lexi';
 $animal->color = 'tri Red';
 echo $animal->describe();
 echo $animal->makeSound();
+
+*/
+
+
 
 
 
