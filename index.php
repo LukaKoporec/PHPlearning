@@ -104,21 +104,28 @@ else {
 */
 
 class User{
-  public function __construct(){
-    //echo 'Constructor Called';
+  private $id;
+  private $username;
+  private $email;
+  private $password;
+
+  public function __construct($username, $password){
+    $this->username = $username;
+    $this->password = $password;
   }
 
   public function register(){
   echo 'User Registered';
 }
 
-public function login($username, $password){
-  $this->auth_user($username, $password);
+public function login(){
+
+  $this->auth_user();
 
 }
 
-public function auth_user($username, $password){
-  echo $username. ' is authenticated';
+public function auth_user(){
+  //echo $this->username. ' is authenticated';
 }
 
 public function __destruct(){
@@ -126,10 +133,12 @@ public function __destruct(){
 }
 }
 
-$User = new User;
+$User = new User('Brad', '1234');
+
 
 //$User->register();
-$User->login('Brad', '1234');
+
+//$User->login();
 
 
 
