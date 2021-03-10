@@ -183,8 +183,6 @@ echo $second->getName();
 
 echo $second->saySomething('Hello world');
 
-*/
-
 class User{
   public $username;
   public static $minPassLenght = 5;
@@ -198,7 +196,7 @@ class User{
     }
   }
 }
-/*
+
 $password = 'pass';
 
 if(User::validatePassword($password)){
@@ -207,11 +205,47 @@ if(User::validatePassword($password)){
 else {
   echo 'Password is NOT valid';
 }
-*/
+
 
 echo User::$minPassLenght;
+*/
 
+abstract class Animal{
+  public $name;
+  public $color;
 
+  public function describe(){
+    return $this->name.' is ' .$this->color;
+  }
+
+  abstract public function makeSound();
+}
+
+class Duck extends Animal{
+  public function describe(){
+    return parent::describe();
+  }
+
+  public function makeSound(){
+    return 'Quack';
+  }
+}
+
+class Dog extends Animal{
+  public function describe(){
+    return parent::describe();
+  }
+
+  public function makeSound(){
+    return 'Bark';
+  }
+}
+
+$animal = new Dog();
+$animal->name = 'Lexi';
+$animal->color = 'tri Red';
+echo $animal->describe();
+echo $animal->makeSound();
 
 
 
