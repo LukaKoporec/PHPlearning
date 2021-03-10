@@ -161,8 +161,6 @@ $post->name = 'Testing';
 echo $post->name;
 var_dump(Isset($post->name));
 
-*/
-
 class First{
   public $id = 23;
   protected $name = 'John Doe';
@@ -183,7 +181,37 @@ $second = new Second;
 
 echo $second->getName();
 
-//echo $second->saySomething('Hello world');
+echo $second->saySomething('Hello world');
+
+*/
+
+class User{
+  public $username;
+  public static $minPassLenght = 5;
+
+  public static function validatePassword($password){
+    if(strlen($password) >= self::$minPassLength){
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+}
+/*
+$password = 'pass';
+
+if(User::validatePassword($password)){
+  echo 'Password is Valid';
+}
+else {
+  echo 'Password is NOT valid';
+}
+*/
+
+echo User::$minPassLenght;
+
+
 
 
 
