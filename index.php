@@ -88,9 +88,24 @@ else {
   echo "Wrong";
 }
 
+or == ||
+and == &&
 
+$num1 = 30;
+$num2 = 20;
+
+if ($num1 == 30 && $num2 == 20) {
+  echo "Correct";
+}
+else {
+  echo "Wrong";
+}
 
 */
+
+
+
+
 
 
 
