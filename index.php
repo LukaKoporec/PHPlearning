@@ -72,8 +72,25 @@ function greet($greeting, $name='John'){
 greet('Whats up','Brad');
 
 
-*/
 
+IF, ELSE, elseif
+
+$num1 = 50;
+
+
+if ($num1 == 40) {
+  echo 'Correct';
+}
+elseif ($num1 ==50) {
+  echo "Correct";
+}
+else {
+  echo "Wrong";
+}
+
+
+
+*/
 
 
 
