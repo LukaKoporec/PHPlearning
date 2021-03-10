@@ -245,7 +245,6 @@ $animal->color = 'tri Red';
 echo $animal->describe();
 echo $animal->makeSound();
 
-*/
 
 spl_autoload_register(function($class_name){
 include $class_name.'.php';
@@ -256,6 +255,31 @@ $bar = new Bar;
 
 $bar->sayHello()
 
+class People{
+  public $person1 = 'Mike';
+  public $person2 = 'Shelly';
+  public $person3 = 'Jeff';
+
+  protected $person4 = 'John';
+  private $person5 = 'Jen';
+
+  function iterateObject(){
+    foreach($this as $key => $value){
+      print "$key => $value\n";
+    }
+  }
+
+}
+
+$people = new People;
+
+foreach($people as $key => $value){
+  print "$key => $value\n";
+}
+
+$people->iterateObject();
+
+*/
 
 
 
